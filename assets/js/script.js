@@ -52,7 +52,7 @@ searchBtn.click(function () {
             var lat = httpResponse.coord.lat;
             var lon = httpResponse.coord.lon;
             //get uv index, display
-            var uvIndexURL = `http://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=` + apiKey
+            var uvIndexURL = `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=` + apiKey
             $.ajax({
                 url: uvIndexURL,
                 method: "GET"
@@ -62,7 +62,7 @@ searchBtn.click(function () {
                 currentUV.append("UV Index: " + httpResponse.value)
             })
             //five day forecast
-            var fiveDayForecastURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + searchContent + "&appid=" + apiKey + "&units=metric"
+            var fiveDayForecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchContent + "&appid=" + apiKey + "&units=metric"
             $.ajax({
                 url: fiveDayForecastURL,
                 method: "GET"
