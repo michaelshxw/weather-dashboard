@@ -1,21 +1,12 @@
-.weatherOutput {
-    border: 3px solid black;
-    /* margin: 5px !important; */
-}
-
 ul {
     margin-top: 20px !important;
     margin-right: 25px;
 }
 
-li {
-    list-style-type: none;
+h2 {
+    font-size: 1.5em !important;
 }
 
-
-
-
-h2 {
-    font-size: 1em !important;
-
+.col {
+    margin: 10px !important;
 }
